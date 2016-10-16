@@ -76,16 +76,18 @@ use oh;
 select * from 保养信息
 where 保养ID=(select 保养ID from 保养记录
 where 设备ID='123456');
-![](/)
+![](/1.jpg)
 select * from 保养记录 where 设备ID='123456';
-![]
+![](/2.jpg)
 select * from 设备信息 where 设备ID='123456';
-![]
+![](/3.jpg)
 select * from 检修情况 where 设备ID="123456";
-![]
+![](/4.jpg)
 select 设备 ID from 设备信息
 where 365-datediff(now(),(select 最近一次保养时间 from 设备信息))<10;
+![](/5.jpg)
 ##ER
+![](/6.jpg)
 
 
 
